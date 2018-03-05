@@ -10,6 +10,10 @@ String sectionName
 
 String description
 
+TeamLeader teamleader
+
+static hasMany=[employees:Employee, shifts:Shift, tasks:Task]
+
     static constraints = {
 teamName blank:false, nullable:false
 numberOfEmployees blank:false, nullable:false

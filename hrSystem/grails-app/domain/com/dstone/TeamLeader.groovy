@@ -15,6 +15,12 @@ String leaderEmail
 
 String password
 
+Manager manager
+
+Team team
+
+static hasMany=[employees:Employee]
+
     static constraints = {
 fullName blank:false,nullable:false
 department blank:false,nullable:false

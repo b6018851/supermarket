@@ -18,6 +18,14 @@ String taxCode
 
 String contract
 
+Manager manager
+
+TeamLeader teamleader
+
+Shift shift
+
+Team team
+
     static constraints = {
 fullName blank:false, nullable:false
 dateOfBirth blank:false, nullable:false
