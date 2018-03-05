@@ -2,5 +2,5 @@ package com.dstone
 
 class TeamController {
 
-    def index() { }
+    def scaffold=Team
 }

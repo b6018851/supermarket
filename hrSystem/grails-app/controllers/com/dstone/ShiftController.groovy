@@ -2,5 +2,5 @@ package com.dstone
 
 class ShiftController {
 
-    def index() { }
+    def scaffold=Shift
 }

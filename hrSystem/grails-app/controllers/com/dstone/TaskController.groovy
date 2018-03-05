@@ -2,5 +2,5 @@ package com.dstone
 
 class TaskController {
 
-    def index() { }
+    def scaffold=TaskController
 }
