@@ -8,7 +8,7 @@ String userName
 
 String password
 
-String employeeEmail
+String managerEmail
 
 String office
 
@@ -20,7 +20,7 @@ static hasMany=[employees:Employee, teamleaders:TeamLeader]
 fullName blank:false,nullable:false
 userName blank:false,nullable:false
 password blank:false,nullable:false
-employeeEmail blank:false,nullable:false
+managerEmail blank:false,nullable:false
 office blank:false,nullable:false
 department blank:false,nullable:false
     }

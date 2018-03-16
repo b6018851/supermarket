@@ -35,5 +35,9 @@ employeeID blank:false, nullable:false
 dateEmployed blank:false, nullable:false
 taxCode blank:false, nullable:false
 contract blank:false, nullable:false
+manager blank:true, nullable:true
+teamleader blank:true, nullable:true
+shift blank:true, nullable:true
+team blank:true, nullable:true
     }
 }
