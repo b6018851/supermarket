@@ -14,6 +14,8 @@ String office
 
 String department
 
+static hasMany=[teamleaders:TeamLeader]
+
 
 String toString(){
 return fullName

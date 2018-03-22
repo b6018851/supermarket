@@ -11,6 +11,7 @@ password:'password1',
 managerEmail:'scross@email.com',
 office:'B1-900',
 department:'Grocery',
+teamleader:TeamLeader
 ).save()
 
 def man2=new Manager(
@@ -19,7 +20,8 @@ userName:'bhandle',
 password:'password2',
 managerEmail:'bhandle@email.com',
 office:'B1-800',
-department:'Electronics'
+department:'Electronics',
+teamleader:TeamLeader
 ).save()
 
 def tl1= new TeamLeader(
