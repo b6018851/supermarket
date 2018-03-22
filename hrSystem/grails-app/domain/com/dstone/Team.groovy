@@ -12,9 +12,9 @@ String description
 
 TeamLeader teamleader
 
-static hasMany=[employees:Employee, shifts:Shift, tasks:Task]
+Shift shift
 
-static belongsTo=[Employee, Shift, Task]
+Task task
 
 String toString(){
 return teamName
@@ -25,8 +25,7 @@ teamName blank:false, nullable:false
 numberOfEmployees blank:false, nullable:false
 sectionName blank:false, nullable:false
 description blank:false, nullable:false, maxSize:5000, widget:'textarea' 
-employees blank:true, nullable:true
-shifts blank:true, nullable:true
-tasks blank:true, nullable:true
+shift blank:true, nullable:true
+task blank:true, nullable:true
     }
 }

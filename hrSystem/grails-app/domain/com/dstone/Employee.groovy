@@ -24,9 +24,9 @@ TeamLeader teamleader
 
 Team team
 
-static hasMany=[tasks:Task, shifts:Shift]
+Shift shift
 
-static belongsTo=[Task, Shift]
+Task task
 
 String toString(){
 return fullName
@@ -41,10 +41,10 @@ employeeID blank:false, nullable:false
 dateEmployed blank:false, nullable:false
 taxCode blank:false, nullable:false
 contract blank:false, nullable:false
-shifts blank:true, nullable:true
+shift blank:true, nullable:true
 manager blank:true, nullable:true
 teamleader blank:true, nullable:true
 team blank:true, nullable:true
-tasks blank:true, nullable:true
+task blank:true, nullable:true
     }
 }

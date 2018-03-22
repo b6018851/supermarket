@@ -14,9 +14,6 @@ String office
 
 String department
 
-static hasMany=[employees:Employee, teamleaders:TeamLeader]
-
-static belongsTo=[Employee, TeamLeader]
 
 String toString(){
 return fullName
@@ -31,7 +28,5 @@ password blank:false,nullable:false
 managerEmail blank:false,nullable:false
 office blank:false,nullable:false
 department blank:false,nullable:false
-employees blank:true,nullable:true
-teamleaders blank:true,nullable:true
     }
 }

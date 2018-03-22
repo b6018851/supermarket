@@ -10,7 +10,7 @@ userName:'scross',
 password:'password1',
 managerEmail:'scross@email.com',
 office:'B1-900',
-department:'Grocery'
+department:'Grocery',
 ).save()
 
 def man2=new Manager(
@@ -39,18 +39,58 @@ fullName:'Thomas Mulhurn',
 department:'Electronics',
 employeeID:'TL2222',
 sectionName:'Computers',
-officePhone:'02222888',
+officePhone: '02222888',
 leaderEmail:'tmul@email.com',
 password:'leader2',
 manager:man2
 ).save()
+
+def task1=new Task(
+taskName:'Replenish',
+numberOfPeople:8,
+sectionName:'Fruit',
+department:'Groceries',
+timeRequired:'1 hour',
+description:'Replenishing stock',
+taskCompleted:true
+).save()
+
+def task2=new Task(
+taskName:'Facing Up',
+numberOfPeople:2,
+sectionName:'Cans',
+department:'Groceries',
+timeRequired:'2 Hours',
+description:'Face up all canned goods',
+taskCompleted:true
+).save()
+
+
+def shift1=new Shift(
+timeOfDay:'Morning',
+dayOfWeek:'Monday',
+numberOfHours:'4',
+startingTime:'6:00am',
+task: task1
+).save()
+
+def shift2=new Shift(
+timeOfDay:'Afternoon',
+dayOfWeek:'Tuesday',
+numberOfHours:'6',
+startingTime:'12:00am',
+task: task2
+).save()
+
 
 def team1=new Team(
 teamName:'Team Loading',
 numberOfEmployees:'10',
 sectionName:'Bakery',
 description:'Loading deliveries',
-teamleader:tl1
+teamleader:tl1,
+shift: shift1,
+task: task1
 ).save()
 
 def team2=new Team(
@@ -58,8 +98,11 @@ teamName:'Team Unloading',
 numberOfEmployees:'20',
 sectionName:'Groceries',
 description:'Unloading deliveries',
-teamleader:tl2
+teamleader:tl2,
+shift: shift2,
+task: task2
 ).save()
+
 
 
 
@@ -74,7 +117,9 @@ taxCode:'TX345',
 contract:'Full-time',
 manager:man1,
 teamleader:tl1,
-team:team1
+team:team1,
+shift: shift1,
+task: task1
 ).save()
 
 def emp2=new Employee(
@@ -88,46 +133,18 @@ taxCode:'TX345',
 contract:'Full-time',
 manager:man2,
 teamleader:tl2,
-team:team2
-).save()
-
-def task1=new Task(
-taskName:'Replenishing',
-numberOfPeople:8,
-sectionName:'Fruit',
-department:'Groceries',
-timeRequired:'1 hour',
-description:'Replenishing stock',
-taskCompleted:'fasle',
-).save()
-
-def task2=new Task(
-taskName:'Facing Up',
-numberOfPeople:2,
-sectionName:'Cans',
-department:'Groceries',
-timeRequired:'2 Hours',
-description:'Face up all canned goods',
-taskCompleted:'false',
-).save()
-
-def shift1=new Shift(
-timeOfDay:'Morning',
-dayOfWeek:'Monday',
-numberOfHours:'4',
-startingTime:'6:00am'
-).save()
-
-def shift2=new Shift(
-timeOfDay:'Afternoon',
-dayOfWeek:'Tuesday',
-numberOfHours:'6',
-startingTime:'12:00am'
+team:team2,
+shift: shift2,
+task: task2
 ).save()
 
 
 
-//shift1.addTotasks(task1)
+
+
+
+
+//task1.addToshifts(shift1)
 //shift2.addTotasks(task2)
 //emp1.addTotasks(task1)
 //emp2.addTotasks(task2)
