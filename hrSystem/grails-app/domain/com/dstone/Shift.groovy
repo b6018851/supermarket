@@ -10,7 +10,12 @@ int numberOfHours
 
 String startingTime
 
-Task task
+
+Employee employee
+
+static hasMany=[teams:Team, tasks:Task]
+
+static belongsTo=[Task]
 
 String toString(){
 return timeOfDay
@@ -22,6 +27,6 @@ timeOfDay blank:false, nullable:false
 dayOfWeek blank:false, nullable:false
 numberOfHours blank:false, nullable:false
 startingTime blank:false, nullable:false
-task blank:true, nullable:true
+employee blank:true, nullable:true
     }
 }

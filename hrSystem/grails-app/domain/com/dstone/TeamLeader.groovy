@@ -15,7 +15,11 @@ String leaderEmail
 
 String password
 
-Manager manager
+Employee employee
+
+
+
+static hasMany=[managers:Manager]
 
 String toString(){
 return fullName
@@ -29,8 +33,7 @@ sectionName blank:true,nullable:false
 officePhone blank:true,nullable:false
 leaderEmail blank:false,nullable:false
 password blank:false,nullable:false
-manager blank:true, nullable:true
-
+employee blank:true, nullable:true
 
     }
 }

@@ -14,7 +14,9 @@ String office
 
 String department
 
-static hasMany=[teamleaders:TeamLeader]
+TeamLeader teamleader
+
+Employee employee
 
 
 String toString(){
@@ -24,11 +26,13 @@ return fullName
 
 
     static constraints = {
-fullName blank:false,nullable:false
-userName blank:false,nullable:false
-password blank:false,nullable:false
-managerEmail blank:false,nullable:false
-office blank:false,nullable:false
-department blank:false,nullable:false
+fullName blank:false, nullable:false
+userName blank:false, nullable:false
+password blank:false, nullable:false
+managerEmail blank:false, nullable:false
+office blank:false, nullable:false
+department blank:false, nullable:false
+teamleader blank:true, nullable:true
+employee blank:true, nullable:true
     }
 }

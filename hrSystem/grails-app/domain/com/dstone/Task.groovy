@@ -16,6 +16,9 @@ String description
 
 Boolean taskCompleted
 
+static hasMany=[employees:Employee, teams:Team, shifts:Shift]
+
+static belongsTo=[Employee, Team]
 
 
 String toString(){

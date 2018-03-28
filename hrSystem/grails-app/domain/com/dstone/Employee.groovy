@@ -18,15 +18,10 @@ String taxCode
 
 String contract
 
-Manager manager
 
-TeamLeader teamleader
+static hasMany=[managers:Manager, teamleaders:TeamLeader, shifts:Shift, teams:Team, tasks:Task]
 
-Team team
-
-Shift shift
-
-Task task
+static belongsTo=[Team]
 
 String toString(){
 return fullName
@@ -41,10 +36,6 @@ employeeID blank:false, nullable:false
 dateEmployed blank:false, nullable:false
 taxCode blank:false, nullable:false
 contract blank:false, nullable:false
-shift blank:true, nullable:true
-manager blank:true, nullable:true
-teamleader blank:true, nullable:true
-team blank:true, nullable:true
-task blank:true, nullable:true
+
     }
 }
