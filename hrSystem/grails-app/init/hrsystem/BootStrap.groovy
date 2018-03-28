@@ -4,7 +4,7 @@ class BootStrap {
 
     def init = { servletContext ->
 
-def task1=new Task(
+/*def task1=new Task(
 taskName:'Replenish',
 numberOfPeople:8,
 sectionName:'Fruit',
@@ -142,9 +142,9 @@ tl1.addToManagers(man2)
 emp1.addToManagers(man1)
 emp2.addToManagers(man2)
 emp1.addToManagers(man2)
-//emp1.addToTeamLeaders(tl1)
-//emp2.addToTeamLeaders(tl2)
-//emp1.addToTeamLeaders(tl2)
+emp1.addToTeamLeaders(tl1)
+emp2.addToTeamLeaders(tl2)
+emp1.addToTeamLeaders(tl2)
 emp1.addToShifts(shift1)
 emp2.addToShifts(shift2)
 emp1.addToShifts(shift2)
@@ -187,7 +187,7 @@ shift1.addToTasks(task2)
 task1.addToShifts(shift1)
 task2.addToShifts(shift2)
 task2.addToShifts(shift1)
-task1.addToShifts(shift2)
+task1.addToShifts(shift2)*/
 
 
 
