@@ -5,7 +5,7 @@ String fullName
 
 String department
 
-String employeeID
+String employeeid
 
 String sectionName
 
@@ -17,8 +17,6 @@ String password
 
 Employee employee
 
-
-
 static hasMany=[managers:Manager]
 
 String toString(){
@@ -28,7 +26,7 @@ return fullName
     static constraints = {
 fullName blank:false,nullable:false
 department blank:false,nullable:false
-employeeID blank:true,nullable:false
+employeeid blank:true,nullable:false
 sectionName blank:true,nullable:false
 officePhone blank:true,nullable:false
 leaderEmail blank:false,nullable:false

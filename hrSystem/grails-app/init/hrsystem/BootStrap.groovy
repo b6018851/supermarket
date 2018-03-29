@@ -65,7 +65,7 @@ employee: emp2
 def tl1= new TeamLeader(
 fullName:'Sarah Macdonald',
 department:'Grocery',
-employeeID:'TL1111',
+employeeid:'TL1111',
 sectionName:'Bakery',
 officePhone: '01111777',
 leaderEmail:'smac@email.com',
@@ -77,7 +77,7 @@ employee: emp1
 def tl2=new TeamLeader(
 fullName:'Thomas Mulhurn',
 department:'Electronics',
-employeeID:'TL2222',
+employeeid:'TL2222',
 sectionName:'Computers',
 officePhone: '02222888',
 leaderEmail:'tmul@email.com',
@@ -110,7 +110,7 @@ teamleader: tl2
 
 def man1=new Manager(
 fullName:'Steve Crossbar',
-userName:'scross',
+username:'scross',
 password:'password1',
 managerEmail:'scross@email.com',
 office:'B1-900',
@@ -120,7 +120,7 @@ teamleader: tl1
 
 def man2=new Manager(
 fullName:'Bob Handle',
-userName:'bhandle',
+username:'bhandle',
 password:'password2',
 managerEmail:'bhandle@email.com',
 office:'B1-800',
