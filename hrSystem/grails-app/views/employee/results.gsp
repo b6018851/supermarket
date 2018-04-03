@@ -11,19 +11,28 @@
 <h1>Employee Search</h1>
 <h3>Search Results</h3>
 <p>
- Searched ${totalEmployees} records
- for items matching <em>${term}</em>.
+ Searched
+ for employees matching <em>${term}</em>
  Found <strong>${employees.size()}</strong> employees.
- </p>
- <ul>
+</p>
+<ul>
  <g:each var="employee" in="${employees}">
  <li><g:link controller="employee" action="show"
-id="${employee.id}">${employee.full_name}</g:link></li>
+id="${employee.employeeID}">${employee.fullName}"</g:link></li>
  </g:each>
  </ul>
-<button type="button" class="btn btn-success">
- <g:link action='search'>Search Again</g:link>
-</button>
+<g:link action='search'>Search Again</g:link>
 </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

@@ -17,8 +17,8 @@
 
 <div class="row">
  <asset:image src="T-T-13754-Supermarket-Themed-Banner.jpg"/>
-<g:manloginToggle />
-<g:tlloginToggle />
+<g:manloginToggle/>
+<g:tlloginToggle/>
  </div>
     
 

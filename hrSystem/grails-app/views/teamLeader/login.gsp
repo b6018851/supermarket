@@ -21,10 +21,10 @@
       <table>
         <tr class="prop">
           <td class="name">
-            <label for="username">User Name:</label>
+            <label for="leaderemail">Email:</label>
           </td>
           <td class="value">
-            <input type="text" id="username" name="username" value="">
+            <input type="text" id="leaderemail" name="leaderemail" value="">
           </td></tr>
         <tr class="prop">
           <td class="name">

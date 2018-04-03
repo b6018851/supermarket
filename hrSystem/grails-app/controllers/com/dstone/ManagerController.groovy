@@ -18,9 +18,9 @@ class ManagerController {
     flash.message="Invalid username and/or password."
     render view:'login'
 }
+}
     def logout ={
     session.user = null
     redirect(uri:'/')
-}
 }
 }

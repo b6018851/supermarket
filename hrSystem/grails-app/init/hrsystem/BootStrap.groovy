@@ -36,7 +36,7 @@ contract:'Full-time',
 ).save()
 
 def emp2=new Employee(
-fullName:'Sam Jones',
+fullName:'Sam Jo8080nes',
 dateOfBirth:new Date ('02/08/1995'),
 residence:'Rotherham',
 hourlyRate:'7.50',
@@ -84,7 +84,7 @@ leaderEmail:'tmul@email.com',
 password:'leader2',
 employee: emp2
 ).save()
-
+8080
 
 
 

@@ -50,11 +50,11 @@
 </button>
 </div>
 
-<div class="first">
+<div class="second">
 <h3>Search Employee</h3>
 <p> </p>
 <button type="button" class="btn btn-success">
-<g:link controller="employee" action="create">search for employee</g:link>
+<g:link controller="employee" action="search">search for employee</g:link>
 </button>
 </div>
 
