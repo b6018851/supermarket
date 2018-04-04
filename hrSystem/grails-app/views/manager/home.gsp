@@ -22,7 +22,7 @@
 <h3>Team Leader Management</h3>
 <p>Add a paragraph of placeholder text(e.g. lorem ipsum….) </p>
 <button type="button" class="btn btn-success">
-<g:link controller="teamleader" action="create">Add Team Leader</g:link>
+<g:link controller="teamLeader" action="create">Add Team Leader</g:link>
 </button>
 </div>
 
@@ -34,15 +34,8 @@
 </button>
 </div>
 
-<div class="second">
-<h3>Employee Management</h3>
-<p> Add a paragraph of placeholder text(e.g. lorem ipsum….)</p>
-<button type="button" class="btn btn-success">
-<g:link controller="employee" action="create">Add Employee</g:link>
-</button>
-</div>
 
-<div class="first">
+<div class="second">
 <h3>Shift Management</h3>
 <p> Add a paragraph of placeholder text(e.g. lorem ipsum….)</p>
 <button type="button" class="btn btn-success">
@@ -50,7 +43,7 @@
 </button>
 </div>
 
-<div class="second">
+<div class="first">
 <h3>Search Employee</h3>
 <p> </p>
 <button type="button" class="btn btn-success">

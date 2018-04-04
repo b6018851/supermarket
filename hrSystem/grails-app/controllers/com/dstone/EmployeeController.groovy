@@ -10,7 +10,7 @@ class EmployeeController {
 
     def employeesProps=Employee.metaClass.properties*.name
     
-    def employees = Employee.with Criteria {
+    def employees = Employee.withCriteria {
     "${params.queryType}" {
     params.each{ 
     field, value ->

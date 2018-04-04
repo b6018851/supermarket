@@ -11,7 +11,7 @@ String sectionName
 
 int officePhone
 
-String leaderemail
+String leaderEmail
 
 String password
 
@@ -29,7 +29,7 @@ department blank:false,nullable:false
 employeeid blank:true,nullable:false
 sectionName blank:true,nullable:false
 officePhone blank:true,nullable:false
-leaderemail blank:false,nullable:false
+leaderEmail blank:false,nullable:false, email:true
 password blank:false,nullable:false
 employee blank:true, nullable:true
 

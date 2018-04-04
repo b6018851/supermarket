@@ -8,15 +8,15 @@
 <div class="row">
 <h1>Employee Search</h1>
 <formset>
-<legend>Search for Employees</legend>
+<legend>Search for Task</legend>
 <table>
 <g:form action="results">
 <tr>
-<td>Name</td>
-<td><g:textField name="fullname"/></td>
+<td>Task Name</td>
+<td><g:textField name="taskname"/></td>
 </tr>
 <tr>
-<td>Employee ID</td>
+<td>section</td>
 <td><g:textField name="employeeid"/></td>
 </tr>
 <tr>
@@ -41,4 +41,3 @@ ${it.radio} ${it.label}
  </formset>
 </div>
  </body>
-</html>

@@ -2,7 +2,7 @@ package com.dstone
 
 class Employee {
 
-String fullName
+String fullname
 
 Date dateOfBirth
 
@@ -10,11 +10,11 @@ String residence
 
 String hourlyRate
 
-String employeeID
+String employeeid
 
 Date dateEmployed
 
-String taxCode
+String taxcode
 
 String contract
 
@@ -24,17 +24,17 @@ static hasMany=[managers:Manager, teamleaders:TeamLeader, shifts:Shift, teams:Te
 static belongsTo=[Team]
 
 String toString(){
-return fullName
+return fullname
 }
 
     static constraints = {
-fullName blank:false, nullable:false
+fullname blank:false, nullable:false
 dateOfBirth blank:false, nullable:false
 residence blank:false, nullable:false
 hourlyRate blank:false, nullable:false
-employeeID blank:false, nullable:false
+employeeid blank:false, nullable:false
 dateEmployed blank:false, nullable:false
-taxCode blank:false, nullable:false
+taxcode blank:false, nullable:false
 contract blank:false, nullable:false
 
     }

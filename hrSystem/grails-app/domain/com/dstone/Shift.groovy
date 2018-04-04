@@ -20,6 +20,9 @@ static belongsTo=[Task]
 String toString(){
 return timeOfDay
 }
+double calculateHoursForFourWeeks(){
+4*numberOfHours
+}
 
     static constraints = {
 

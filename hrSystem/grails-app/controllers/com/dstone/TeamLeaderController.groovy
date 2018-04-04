@@ -8,7 +8,7 @@ class TeamLeaderController {
 
     def validate(){
     
-    def user= TeamLeader.findByLeaderemail(params.leaderemail)
+    def user= TeamLeader.findByLeaderEmail(params.leaderEmail)
 
     if (user && user.password == params.password){
     session.user = user
