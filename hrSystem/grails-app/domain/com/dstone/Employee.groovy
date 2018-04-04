@@ -27,6 +27,10 @@ String toString(){
 return fullname
 }
 
+
+
+
+
     static constraints = {
 fullname blank:false, nullable:false
 dateOfBirth blank:false, nullable:false
@@ -37,5 +41,6 @@ dateEmployed blank:false, nullable:false
 taxcode blank:false, nullable:false
 contract blank:false, nullable:false
 
-    }
+   }
 }
+

@@ -8,10 +8,10 @@ class TeamLeaderController {
 
     def validate(){
     
-    def user= TeamLeader.findByLeaderEmail(params.leaderEmail)
+   def user= TeamLeader.findByLeaderEmail(params.leaderEmail)
 
     if (user && user.password == params.password){
-    session.user = user
+  /session.user = user
     render view:'home'
 }
     else{
@@ -23,7 +23,7 @@ class TeamLeaderController {
     session.user = null
     redirect(uri:'/')
 }
-}
+
 
 
 
